@@ -1,0 +1,25 @@
+/*
+N школьников делят K яблок поровну, неделящийся остаток остается в корзинке. Сколько яблок останется в корзинке?
+
+Входные данные
+Программа получает на вход числа N и K.
+
+Выходные данные
+Программа должна вывести искомое количество яблок.
+ */
+
+using System;
+
+namespace Delezh1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int deti = Convert.ToInt32(Console.ReadLine());
+            int yabloky = Convert.ToInt32(Console.ReadLine());
+            int ostatok = yabloky % deti;
+            Console.WriteLine(ostatok);
+        }
+    }
+}
