@@ -1,0 +1,35 @@
+/*
+Дано два числа a и b. Найдите гипотенузу треугольника с заданными катетами.
+
+Входные данные
+В двух строках вводятся два числа (числа целые,положительные, не превышают 1000).
+
+Выходные данные
+Выведите ответ на задачу.
+ */
+
+
+using System;
+using System.ComponentModel.Design;
+
+namespace Domashka
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Здравствуйте. Эта программа поможет посчитать гипотенузу. Пожауйства, введите значения катетов по очереди через Enter");
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            if (a >= 0 && b >= 0)
+            {
+                double c = Math.Round(Math.Sqrt(a * a + b * b), 2);
+                Console.WriteLine(c);
+            }
+            else
+            {
+                Console.WriteLine("Ошибка! Вы разве не курсе, что отрицательных длин не существует?!");
+            }
+        }
+    }
+}
