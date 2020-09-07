@@ -1,0 +1,25 @@
+/*
+Дано двузначное число. Найдите число десятков в нем.
+
+Входные данные
+Вводится двухзначное число.
+
+Выходные данные
+Выведите ответ на задачу.
+*/
+
+
+using System;
+
+namespace ConsoleApp9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int c = Convert.ToInt32(Console.ReadLine());
+            c = c / 10;
+            Console.WriteLine(c);
+        }
+    }
+}
