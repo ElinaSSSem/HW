@@ -1,0 +1,14 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{   
+		string d = Console.ReadLine();
+        string[] n = d.Split(new char[] { ' ' });
+        for (int i = 0; i<n.Length; i++)  
+        { 
+	    if (i % 2 == 0) Console.WriteLine(n[i]);
+        }
+	}
+}
