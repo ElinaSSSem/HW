@@ -8,7 +8,7 @@ public class Program
 		for (int i=0; i<y.Length; i++)
 		{
 			if (y[i] % 2 == 0) 
-			Console.Write(k);
+			Console.Write(y[i]);
 		}
 	}
 }
