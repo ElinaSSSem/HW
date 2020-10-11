@@ -1,0 +1,18 @@
+//* как вывести только одну пару? *//
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string str = Console.ReadLine();
+		string[] h = str.Split(new char[] { ' ' });
+		for (int i = 0; i<h.Length; i++)  
+		 { 
+			 var j = int.Parse(h[i+1]);
+			 var c = int.Parse(h[i]); 
+			 if ( j*c >= 0 ) Console.WriteLine("{0} {1}", j, c);	 
+		 }
+	}
+}
