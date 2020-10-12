@@ -1,6 +1,3 @@
-//* ВЫДАЕТ EXEPTION!!!!!
-не знаю что делать *//
-
 using System;
 					
 public class Program
@@ -9,11 +6,14 @@ public class Program
 	{
 		string str = Console.ReadLine();
 		string[] h = str.Split(new char[] { ' ' });
-		for (int i = 0; i<h.Length-1; i++)  
-		 { 
-			 var j = int.Parse(h[i+1]);
-			 var c = int.Parse(h[i]); 
-			 if ( j > c ) Console.WriteLine(j);	 
+		ibt[] ints = new int[h.Length];
+		for (int i = 0; i< h.Length; i++)
+		{
+		  ints[i] = int.Parse(h[i]);
+		}
+		for (int i = 0; i<h.Length-1; i++)
+		 {  
+			 if ( ints[i+1] > int[i] ) Console.WriteLine(j);	 
 		 }
 	}
 }
