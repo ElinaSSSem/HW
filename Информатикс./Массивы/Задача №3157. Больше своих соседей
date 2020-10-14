@@ -1,0 +1,33 @@
+/*
+Дан список чисел. Определите, сколько в этом списке элементов, 
+которые больше двух своих соседей и выведите количество таких элементов.
+
+Входные данные
+Вводится список чисел. Все числа списка находятся на одной строке.
+
+Выходные данные
+Выведите ответ на задачу.
+*/
+
+using System;
+					
+public class Program
+{
+    public static void Main()
+     {
+	int s = 0;	
+	string str = Console.ReadLine();
+	string[] h = str.Split(new char[] { ' ' });
+	int[] num = new int[h.Length];
+	for (int i = 0; i<h.Length; i++)
+	   {
+	     num[i] = int.Parse(h[i]);
+	   }
+	 for (int i = 0; i<num.Length-2; i++)
+	   {
+		 if (num[i] < num[i+1] && num[i+1]> num[i+2]) s++;  
+	   }
+		 Console.WriteLine(s);
+ 	}
+}
+
