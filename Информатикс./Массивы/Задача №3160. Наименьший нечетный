@@ -32,7 +32,7 @@ public class Program
 		{
 			nechet = num[i]; 
 		}	
-	      else if (num[i] < chet && num[i]%2 == 0)
+	      if (num[i] < chet && num[i]%2 == 0)
 		{
 		    chet = num[i];
 	        }
