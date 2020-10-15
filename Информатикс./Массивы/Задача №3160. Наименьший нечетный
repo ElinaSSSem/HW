@@ -1,0 +1,43 @@
+/*
+Выведите все четные элементы списка.
+
+Входные данные
+Вводится список чисел. Все числа списка находятся на одной строке.
+
+Выходные данные
+Выведите ответ на задачу.
+*/
+
+
+using System;
+					
+public class Program
+{
+   public static void Main()
+	{
+	  string str = Console.ReadLine();
+	  string[] h = str.Split(new char[] { ' ' });
+	  int[] num = new int[h.Length];
+	  for (int i = 0; i<h.Length; i++)
+	   {
+	     num[i] = int.Parse(h[i]);
+	   }
+	  int nechet = int.MaxValue;
+	  int chet = int.MaxValue;
+	  int res = 0;
+	  for (int i = 0; i<h.Length; i++)
+	    {
+	      if ( num[i] < nechet && num[i]%2 != 0)
+		{
+			nechet = num[i]; 
+		}	
+	      else if (num[i] < chet && num[i]%2 == 0)
+		{
+		    chet = num[i];
+	        }
+	    }
+          res = (chet < nechet) ? chet : nechet;
+          if (res%2 == 0) res = 0;
+          Console.WriteLine(res);
+	}
+}
