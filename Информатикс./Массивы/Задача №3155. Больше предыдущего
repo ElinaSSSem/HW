@@ -6,7 +6,7 @@ public class Program
 	{
 		string str = Console.ReadLine();
 		string[] h = str.Split(new char[] { ' ' });
-		ibt[] ints = new int[h.Length];
+		int[] ints = new int[h.Length];
 		for (int i = 0; i< h.Length; i++)
 		{
 		  ints[i] = int.Parse(h[i]);
