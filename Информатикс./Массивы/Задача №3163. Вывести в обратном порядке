@@ -1,0 +1,26 @@
+/*
+Выведите элементы данного списка в обратном порядке, не изменяя сам список.
+
+Входные данные
+Вводится список чисел. Все числа списка находятся на одной строке.
+
+Выходные данные
+Выведите ответ на задачу.
+*/
+
+using System;
+
+ public class Program
+ {
+ 	public static void Main()
+ 	{
+ 		string sh = Console.ReadLine();
+ 		string[] h = sh.Split(new char[] { ' ' });
+ 		int[] ints = new int[h.Length];
+ 		for (int i = ints.Length-1; i >= 0; i--)
+ 	     {
+ 		   ints[i] = int.Parse(h[i]);
+			Console.Write(ints[i] + " ");
+		 }
+ 	}
+ }
