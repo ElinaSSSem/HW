@@ -28,7 +28,7 @@ using System;
         }
    for (int i = 0; i< ints.Length; i++)
         {
-          Console.Write(ints[i] + " ")
+          Console.Write(ints[i] + " ");
         }
    }
 }
