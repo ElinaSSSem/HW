@@ -23,7 +23,7 @@ using System;
  		int number = 0;
     for (int i = ints.Length-1; i >= 0; i--)
  	      {
- 		      ints[number] = int.Parse(h[i]);
+          ints[number] = int.Parse(h[i]);
           number++;
         }
     for (int i = 0; i< ints.Length; i++)
