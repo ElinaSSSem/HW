@@ -17,17 +17,18 @@ public class Program
 {
 	public static void Main()
 	{
-		int nomer = 0;
 		string sh = Console.ReadLine();
 		int r = int.Parse(Console.ReadLine());
 		string[] h = sh.Split(new char[] { ' ' });
 		int[] ints = new int[h.Length];
-		for (int i = 0; i < h.Length-1; i++)
+		int i = 0;
+		for (; i < h.Length-1; i++)
 	        {
-			 ints[i] = int.Parse(h[i]);
-			 if ( ints[i] >= r)
-				 nomer++;
-			 }
-		Console.WriteLine(nomer+1);	 
+			ints[i] = int.Parse(h[i]);
+			if (ints[i] < r) {
+				break;
+			}
+		}
+		Console.WriteLine(i);
 	}
 }
