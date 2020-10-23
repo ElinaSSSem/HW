@@ -17,16 +17,16 @@ using System;
  {
  	public static void Main()
  	{
- 		string sh = Console.ReadLine();
- 		string[] h = sh.Split(new char[] { ' ' });
- 		int[] ints = new int[h.Length];
- 		int number = 0;
-    for (int i = ints.Length-1; i >= 0; i--)
+   string sh = Console.ReadLine();
+   string[] h = sh.Split(new char[] { ' ' });
+   int[] ints = new int[h.Length];
+   int number = 0;
+   for (int i = ints.Length-1; i >= 0; i--)
  	      {
           ints[number] = int.Parse(h[i]);
           number++;
         }
-    for (int i = 0; i< ints.Length; i++)
+   for (int i = 0; i< ints.Length; i++)
         {
           Console.Write(ints[i] + " ")
         }
