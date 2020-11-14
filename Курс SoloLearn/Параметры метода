@@ -1,0 +1,48 @@
+/*
+Магазин проводит промоакцию: если общая стоимость покупок равна или больше 10000, 
+то покупателю предоставляется скидка в размере 20%.
+Вам дана программа, которая берет общую стоимость покупки в качестве вводных данных. 
+Завершите предоставленный метод так, чтобы программа использовала общую сумму покупки в качестве аргумента, 
+вычла и возвратила цену с учетом скидки, если требования акции соблюдены.
+Если скидка не предоставляется – метод должен вывести ту же цену.
+
+Пример вводных данных
+13000
+
+Пример результата
+10400
+
+Пояснение
+13000>10000, поэтому скидка предоставляется: 13000-(0.2*13000) = 10400.
+
+Совет
+Внутри метода используйте выражение if else.
+*/
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SoloLearn
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int totalPrice = Convert.ToInt32(Console.ReadLine());
+            if (totalPrice >= 10000) Discount(totalPrice);
+            else Console.WriteLine(totalPrice);
+
+        }
+        //завершите объявление метода
+        static int Discount(double x)
+        {
+           x=x*0.8;
+           Console.WriteLine(x);
+           return(0);
+        }
+    }
+}
