@@ -1,0 +1,36 @@
+/*
+Создайте приложение для аутентификации в вашем приложении.
+Напишите программу, которая возьмет в качестве вводных данных имя и возраст и выведет соответствующий текст в заданном формате.
+
+Пример вводных данных
+Tom
+26
+
+Пример результата
+Name: Tom
+Age: 26
+
+Совет
+Метод Console.ReadLine() возвращает только строку. Вам нужно преобразовать возраст в целое число.
+*/
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Code_Coach_Challenge
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string Name = Console.ReadLine();
+            string Age = Console.ReadLine();
+            Console.WriteLine($"Name: {Name}");
+            Console.WriteLine($"Age: {Age}");
+        }
+    }
+}
