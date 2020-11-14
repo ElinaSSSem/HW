@@ -1,0 +1,31 @@
+/*
+Вы организуете вечеринку для 7 гостей. Все они любят пиво.
+Напишите программу, которая получит количество бутылок, которое вы купили, 
+в качестве вводных данных и рассчитывает, сколько бутылок останется после того как все гости получат равное количество бутылок.
+
+Пример вводных данных
+30
+
+Пример результата
+2
+*/
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Code_Coach_Challenge
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //введите код сюда
+         int b = int.Parse(Console.ReadLine());
+         b = b - 7*(b/7);
+         Console.WriteLine(b);
+        }
+    }
+}
