@@ -1,0 +1,34 @@
+/* Вы создаете программу для вычисления площади прямоугольника. Она берет в качестве вводных данных длину и высоту.
+Завершите данный метод таким образом, чтобы программа использовала эти данные в качестве аргументов, 
+рассчитала и вернула площадь.
+
+Пример вводных данных
+4
+5
+
+Пример результата
+20 */
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SoloLearn
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int length = Convert.ToInt32(Console.ReadLine());
+            int height = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Area(length,height));
+        }
+        static int Area(int a, int b)
+        {
+            return a*b;
+        }
+    }
+}
